@@ -10,38 +10,38 @@
 - Open up your terminal (type pwd to get a sense of which folder you're in)
 - Unless you want to navigate somewhere else to store your newly created repo, type:
 
-  git clone CTRL + V
+  > git clone CTRL + V
 
 - Hit Enter, in a few seconds your new repo should be there. You can double check and then change your directory to the new repo:
 
-  ls
-  cd <name of your new repo>
+  > ls
+  > cd <name of your new repo>
 
 - There's probably one branch named main, you can check with:
 
-  git branch
+  > git branch
 
 - The "origin" remote has probably been set up. To double check it:
 
-  git remote show origin
+  > git remote show origin
 
 - This should display your newly created github repo's url twice -- once as the Fetch URL and once as the Push URL. This means that you'll push and pull/fetch updates from this location.
 
 - From here make a new branch, type:
 
-  git checkout -b test-branch
+  > git checkout -b test-branch
 
 - Check if there are any files in your new repo. Unless you chose to create a README.md file there might not be. Either way, create a new file & open it with 1 command:
 
-  code test-file.txt
+  > code test-file.txt
 
 - Write something in the file and save it (depending on your IDE settings the file may autosave, either way make sure it's saved).
 
 - Now we'll commit the change to our new branch, test-branch. This commit will include both creating the file and editing it. First check out your git status. Type:
 
-  git status
-  git add .
-  git status
+  > git status
+  > git add .
+  > git status
 
 - You can see how the "status" of your git files changed. When you create new files and immediately type `git status` you'll see them show up in red (depending on your IDE, they show up as red in mine) as "Untracked files". When you modify existing files they'll show up in red as "Changes not staged for commit". Using `git add .` to add them all moves them from the "red" stage to the "green" stage, ie. staged. 
 
@@ -51,22 +51,22 @@
 
 - Anyways let's add everything to our commit. So back to this step:
 
-  git status
-  git add .
-  git status
+  > git status
+  > git add .
+  > git status
 
 - Now we'll commit these staged changes with:
 
-  git commit --message "enter any message here"
+  > git commit --message "enter any message here"
 
 - Your changes should be commited, check the git log to see a) your new commit message and b) a commit hash that git generates for the commit to identify it. This can come in useful later.
 
-  git log
-  git log --oneline -5 (easier to read, enter any number of lines, I just chose 5)
+  > git log
+  > git log --oneline -5 (easier to read, enter any number of lines, I just chose 5)
 
 - No we'll push your new branch with your new changes to the remote repo. Unless your repo is private these changes are visible to anyone.
 
-  git push -u origin test-branch
+  > git push -u origin test-branch
 
 - View your repo in your web browser. You might see an info banner pop up that says "test-branch has recent pushes x seconds ago". In the same banner there's a green button that says "Compare & pull request". Click that.
 
@@ -82,18 +82,18 @@
 
 - Type:
 
-  git branch
+  > git branch
 
 - You'll see that your local test-branch is still there (and you're still on it) so we can see that the branches in the remote repo are probably out of sync with what we have locally. Change to the main branch:
 
-  git checkout main
+  > git checkout main
 
 - You'll probably see that your test file has been deleted. Check your directory to confirm:
 
-  ls
+  > ls
 
 - Lets get the updated main branch. Type:
 
-  git pull
+  > git pull
 
 - Now your newly created test file should appear. At this point it was created in your local feature branch, pushed up to a repo, merged into the main branch, and you've pulled it from the remote repo.
