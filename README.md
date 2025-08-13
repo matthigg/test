@@ -64,7 +64,7 @@
   > git log  
   > git log --oneline -5 (easier to read, enter any number of lines, I just chose 5)
 
-- No we'll push your new branch with your new changes to the remote repo. Unless your repo is private these changes are visible to anyone.
+- Now we'll push your new branch with your new changes to the remote repo. Unless your repo is private these changes are visible to anyone.
 
   > git push -u origin test-branch
 
