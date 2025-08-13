@@ -15,7 +15,7 @@
 - Hit Enter, in a few seconds your new repo should be there. You can double check and then change your directory to the new repo:
 
   > ls  
-  > cd <name of your new repo>
+  > cd 'name of your new repo'
 
 - There's probably one branch named main, you can check with:
 
