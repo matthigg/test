@@ -10,12 +10,12 @@
 - Open up your terminal (type pwd to get a sense of which folder you're in)
 - Unless you want to navigate somewhere else to store your newly created repo, type:
 
-  > git clone CTRL + V
+  $ git clone CTRL + V
 
 - Hit Enter, in a few seconds your new repo should be there. You can double check and then change your directory to the new repo:
 
-  > ls 
-  > cd <name of your new repo>
+  $ ls 
+  $ cd <name of your new repo>
 
 - There's probably one branch named main, you can check with:
 
