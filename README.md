@@ -10,12 +10,12 @@
 - Open up your terminal (type pwd to get a sense of which folder you're in)
 - Unless you want to navigate somewhere else to store your newly created repo, type:
 
-  $ git clone CTRL + V
+  > git clone CTRL + V
 
 - Hit Enter, in a few seconds your new repo should be there. You can double check and then change your directory to the new repo:
 
-  $ ls  
-  $ cd <name of your new repo>
+  > ls  
+  > cd <name of your new repo>
 
 - There's probably one branch named main, you can check with:
 
@@ -39,9 +39,9 @@
 
 - Now we'll commit the change to our new branch, test-branch. This commit will include both creating the file and editing it. First check out your git status. Type:
 
-  > git status
-  > git add .
-  > git status
+  > git status  
+  > git add .  
+  > git status  
 
 - You can see how the "status" of your git files changed. When you create new files and immediately type `git status` you'll see them show up in red (depending on your IDE, they show up as red in mine) as "Untracked files". When you modify existing files they'll show up in red as "Changes not staged for commit". Using `git add .` to add them all moves them from the "red" stage to the "green" stage, ie. staged. 
 
@@ -51,8 +51,8 @@
 
 - Anyways let's add everything to our commit. So back to this step:
 
-  > git status
-  > git add .
+  > git status  
+  > git add .  
   > git status
 
 - Now we'll commit these staged changes with:
@@ -61,7 +61,7 @@
 
 - Your changes should be commited, check the git log to see a) your new commit message and b) a commit hash that git generates for the commit to identify it. This can come in useful later.
 
-  > git log
+  > git log  
   > git log --oneline -5 (easier to read, enter any number of lines, I just chose 5)
 
 - No we'll push your new branch with your new changes to the remote repo. Unless your repo is private these changes are visible to anyone.
